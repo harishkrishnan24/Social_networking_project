@@ -7,7 +7,6 @@ angular.module('app')
                     username: 'dickeyxxx',
                     body: $scope.postBody
                 }).then(function (post) {
-                    $scope.posts.unshift(post.data);
                     $scope.postBody = null;
                 });
             }
@@ -15,5 +14,11 @@ angular.module('app')
 
         PostService.fetch().then(function (posts) {
             $scope.posts = posts.data;
+        });
+
+        $scope.$on('ws:new_post', function (_, post) {
+            $scope.$apply(function () {
+                $scope.posts.unshift(post);
+            });
         });
     });
