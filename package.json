@@ -7,15 +7,20 @@
         "jwt-simple": "^0.5.1",
         "lodash": "^4.17.5",
         "mongoose": "^5.0.4",
+        "morgan": "^1.9.0",
         "ws": "^4.1.0"
     },
     "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-as-promised": "^7.1.1",
         "gulp": "^3.9.1",
         "gulp-concat": "^2.6.1",
         "gulp-ng-annotate": "^2.1.0",
         "gulp-nodemon": "^2.2.1",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-stylus": "^2.7.0",
-        "gulp-uglify": "^3.0.0"
+        "gulp-uglify": "^3.0.0",
+        "mocha": "^5.0.1",
+        "protractor": "^5.3.0"
     }
 }
